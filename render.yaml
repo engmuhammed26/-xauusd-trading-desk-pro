@@ -2,8 +2,8 @@ services:
   - type: web
     name: xauusd-trading-desk-pro
     runtime: docker
-    plan: starter
-    healthCheckPath: /
+    plan: free
+    healthCheckPath: /health
     envVars:
       - key: TWELVEDATA_API_KEY
         sync: false
